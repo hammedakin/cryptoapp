@@ -1,0 +1,315 @@
+/* CSS Variables */
+:root {
+  --pry-color: #3c747a;
+  --pry-color-light: #f0f9fa;
+  --pry-bold-color: #64c2cb;
+  --dark-color: #142729;
+  --dark-hover-color: #1d1d1d;
+  --light-color: #fafafa;
+  --grey-color: #6a7d88;
+  --bg-color: #e0f3f5;
+  --form-color: #f3f4f6;
+  --header-font: "Rockwell", serif;
+  --text-font: "Rockwell", sans-serif;
+}
+/* CSS Variables */
+
+.transparent {
+  background: transparent !important;
+}
+.pry-text {
+  color: var(--pry-color) !important;
+}
+.pry {
+  background-color: var(--pry-color) !important;
+}
+.pry-light {
+  background-color: var(--pry-color-light) !important;
+}
+.pry-border {
+  border: var(--pry-color) 1px solid !important;
+}
+.pry-bold-text {
+  color: var(--pry-bold-color) !important;
+}
+.pry-bold {
+  background-color: var(--pry-bold-color) !important;
+}
+
+.light-bg {
+  background-color: var(--light-color) !important;
+}
+.light-text {
+  color: var(--light-color) !important;
+}
+.dark-bg {
+  background-color: var(--dark-color) !important;
+}
+.dark-text {
+  color: var(--dark-color) !important;
+}
+.grey-text {
+  color: var(--grey-color) !important;
+}
+
+.btn {
+  text-transform: capitalize !important;
+  border-radius: 3px !important;
+  padding: 10px 30px !important;
+  align-items: center !important;
+}
+/* Button */
+
+/* border radius */
+
+.br-0 {
+  border-radius: 0px !important;
+}
+.br-sm {
+  border-radius: 5px !important;
+}
+.br-md {
+  border-radius: 0.7rem !important;
+}
+.br-lg {
+  border-radius: 4rem !important;
+}
+/* border radius */
+
+/* Text Align */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* Text Align */
+
+body {
+  background: var(--bg-color) !important;
+  background-size: cover;
+  margin: 0 auto;
+  color: var(--pry-color) !important;
+  line-height: 1.6;
+  font-family: "Rockwell", sans-serif !important;
+  overflow-x: hidden !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rockwell", sans-serif !important;
+  /* font-weight: 550 !important; */
+}
+
+/* Scrollbar  */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  border: none;
+  background-color: var(--light-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pry-bold-color);
+  height: 10px;
+}
+/* Scrollbar  */
+
+/* Loader */
+.app {
+  width: 100%;
+  height: 100vh;
+  background: #fafaffda;
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* Loader */
+
+/* Navbar */
+nav {
+  transition: 0.3s ease-in !important;
+  padding: 1rem 0 !important;
+  box-shadow: none !important;
+}
+
+.nav-item a.active1 {
+  color: var(--pry-bold-color) !important;
+  transition: 0.1s ease !important;
+}
+
+nav button.navbar-toggler {
+  background-color: none !important;
+}
+
+.navbar-toggler-icon {
+  background: none !important;
+}
+
+nav .nav-item a {
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+
+nav .nav-item a:hover {
+  transition: 0.1s ease !important;
+  color: var(--pry-color) !important;
+}
+
+/* Navbar */
+
+/* Home Tab */
+.home a {
+  font-size: smaller !important;
+  text-transform: capitalize !important;
+}
+
+.home ul {
+  background-color: var(--light-color);
+  width: max-content !important;
+  border-radius: 5rem !important;
+  padding: 6px !important;
+  margin-top: 3rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.home a.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500 !important;
+  padding: 0.7rem 2.7rem;
+  color: #828282 !important;
+  border-bottom: transparent solid 2px !important;
+  border: transparent 1px solid !important;
+  transition: 0.1ms ease-in-out;
+}
+
+.home .nav-link.active {
+  color: var(--light-color) !important;
+  background-color: var(--pry-bold-color) !important;
+  border-radius: 5rem !important;
+  border: 0 !important;
+}
+
+.home .nav-link:hover {
+  color: var(--pry-bold-color) !important;
+  background-color: transparent !important;
+  border-radius: 5rem !important;
+  border: var(--pry-bold-color) 1px solid !important;
+}
+
+.home ul {
+  margin-bottom: 0rem !important;
+}
+
+/* Home Tab */
+
+/* Buy */
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.input-style {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-color);
+  box-shadow: none;
+  margin-bottom: 1.5rem !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.buy .first {
+  padding: 32px;
+}
+
+.buy .second {
+  background: var(--form-color) !important;
+  border: 1.6px transparent solid;
+}
+.buy .second:hover,
+.buy .second:focus {
+  /* background: var(--form-color) !important; */
+  border: 1.6px var(--pry-bold-color) solid !important;
+}
+
+.buy-form {
+  width: 100%;
+  padding: 12px auto !important;
+  border-right: 1px solid var(--dark-color) !important;
+  border: 1px solid transparent;
+  background: var(--form-color) !important;
+  margin-bottom: 0.25rem !important;
+  border-bottom: 1px solid transparent !important;
+  color: var(--pry-lite-color) !important;
+}
+.input-style.buy-form:hover,
+.input-style.buy-form:focus {
+  border-right: 1px solid var(--dark-color) !important;
+  border: 1px solid transparent;
+  color: var(--dark-color);
+}
+
+.buy-form::placeholder {
+  color: var(--grey-color);
+}
+
+.buy .first.active {
+  border: 1px var(--pry-bold-color) solid !important;
+}
+
+.payment .first:hover,
+.payment .first:focus {
+  border: 1px var(--pry-bold-color) solid !important;
+}
+.payment .offer {
+  position: relative !important;
+  top: 0.8rem !important;
+  left: 1rem;
+  background-color: var(--pry-bold-color);
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 0;
+}
+
+.buy .summary {
+  background: var(--pry-color-light) !important;
+  padding: 12px;
+}
+/* .payment .card::before {
+  content: "Best Offer";
+   position: relative !important;
+  bottom: 2rem !important;
+  left: 7rem;
+} */
+
+/* Buy */
+
+@media screen and (max-width: 580px) {
+  .home a.nav-link {
+    padding: 0.7rem 2rem;
+  }
+
+  .buy .first {
+    padding: 32px 10px;
+  }
+}
